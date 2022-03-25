@@ -19,7 +19,7 @@
         
     }
     main{
-        height:760px;
+        height:700px;
         border :2px dashed yellow;
         background-color: #FFF9E5;
     }
@@ -51,11 +51,7 @@
         
 
     }
-    .sv_tbdr{
-        
-       
-        
-    }
+    
     .sv_tbdr:hover{
       color:#233142;
      
@@ -63,32 +59,24 @@
     
     .s_footer{
       display: block;
-      color:#777;
+     color:#777;
       text-decoration:  none;
     }
     .s_footer:hover{
       color:#777;
-      
     }
+    
     .s_underline > a:hover{
       text-decoration: underline;
 
     }
     
     
-    .s_img{
-        width:100%;
-        height: 150px;    
-        background-color: #000;
-        background-image: url(img/chicago-il.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-      
-    }
+    
 
   
     .s_btn{
-        width:60px;
+        width:65px;
         padding-top: 3px;
         height: 45px;
         margin-left: -8px;
@@ -97,9 +85,12 @@
       border:1px solid red;
       display: inline;
     }
+    
     .s_input:focus{
       border-bottom:4px solid #ffd400;
+      box-shadow:none;
      
+      
     }
     h6{
         color:#233142;
@@ -127,17 +118,69 @@
    .s_paragraph{
      font-size: 0.8em;
    }
+   .s_main{
+     border: 1px solid black;
+     
+   }
+   .search_box{
+     
+     position: relative;
+     
+   }
+   .fa-search{
+     padding:0px;
+     margin:0px;
+     position: absolute;
+     padding-top: 10px;
+     padding-left:8px;
+   }
+   .fa-map-marker-alt{
+      padding:0px;
+      margin:0px;
+      position: absolute;
+      padding-top: 10px;
+      padding-left:8px;
+
+   }
+   .s_anker{
+     text-decoration: none;
+   }
+   .s_height{
+     height:100% !important;
+   }
+   .s_color1{
+      background-color:#db2e63;
+   }
+   .s_color2{
+    background-color:#3f80ae;
+   }
+   .s_color3{
+    background-color:#2e8d52;
+   }
     footer{
         min-height:500px;
-        border:2px dashed green;
-        background-color:#F7F7F7;
+       
+        background-color:#cecece;
+    }
+    .rounded-circle{
+      border: 1px solid #4ca3b8;
+      width:70px;
+      height:70px;
+    }
+    .s_circle{
+      color:#000;
+    }
+    .s_circle >a:hover{
+      color:#000;
+      border-bottom: 1px solid black;
+      
     }
     </style>    
     </head>
     
     <body>
-        <header>
-            <div class="s_header fixed-top fixed-bottom p-0 " >
+         <header>
+            <div class="s_header   p-0 " >
               <div class="container h-100 p-0">
               <div class="row ">
                   <div class="col-4 pt-2 ">
@@ -157,16 +200,28 @@
                         
                         
                         <td class="p-0 " >
-                         
+                        <div class="search_box">
                           
-                          <input type="text"class="form-control rounded-0 s_input "  placeholder="why are you"  aria-label="Username" aria-describedby="basic-addon1">
+                          <i class="fas fa-search"></i>
+                          <a href="#" class="s_anker">
+
+                            <input type="text"class="form-control rounded-0 s_input  ps-5  "  autofocus placeholder="what are you looking for ?"  aria-label="Username" aria-describedby="basic-addon1">
                         </td>
                       
+                          </a>
+                        </div>
+                          
                         <td class="p-0">
-                          <input type="text" class="form-control rounded-0 s_input " placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="search_box">
+                            <i class="fas fa-map-marker-alt"></i>
+                             <a href="#" class="s_anker">
+                              <input type="text" class="form-control rounded-0 s_input ps-5 " placeholder="Chicago , IL" aria-label="Username" aria-describedby="basic-addon1">
 
                         </td>
-                        <td class="p-0">
+                            </a> 
+                          </div>
+                          
+                        <td class="p-0 border-0 ">
                           <button type="button" class="btn btn-warning">Find</button>
                         </td>
                       </tr>
@@ -180,112 +235,204 @@
               </div>
               </div>
             </div>
-        </header>
+        </header> 
 
         <main>
-            <div class="s_img"></div>
+          <div class="container p-0 pt-3 s_height">
+           <div class="row offset-2 s_circle ">
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+              <div class="col-1 s_circle">
+                <a href="#" class="text-decoration-none s_circle">
+                  <div class=" d-flex justify-content-center rounded-circle s_circle ">
+                    <img src="./img/restaurants-1.svg"class="w-50" >
+                  </div>
+                  <span class="">Restaourant</span>
+                </a>
+              </div>
+              
+
+
+           </div>
+            <!-- <div class="row p-0 s_height">
+              <div class="col-sm-4 s_main s_color1 ">A</div>
+              <div class="col-sm-4 s_main s_color2 ">B</div>
+              <div class="col-sm-4 s_main s_color3 ">C</div>
+            </div> -->
+           
+           
+          </div>
         </main>
-        <footer class="container  h-100 p-0">
+        <footer>
+             <div class="container  h-100 p-0">
             
-                <div class="row h-100">
+                <div class="row h-100 ">
                     <div class="col-sm-2 s_footer  s_underline  h-100">
                        
                             <h6 >About</h6>
                           
                          
-                           <a class="s_footer s_underline " href="#">Link</a>
+                           <a class="s_footer s_underline " href="#">about us</a>
                          
                          
-                            <a class="s_footer s_underline " href="#">Link</a>
+                            <a class="s_footer s_underline " href="#">Site Feedback</a>
                            
                            
-                            <a class="s_footer s_underline " href="#">Link</a>
+                            <a class="s_footer s_underline " href="#">Contect Us</a>
                           
                           
                            
-                            <a class="s_footer s_underline " href="#">Link</a>
+                            <a class="s_footer s_underline " href="#">Advertise ith Us</a>
                           
-                            <a class="s_footer s_underline " href="#">Link</a>
+                            <a class="s_footer s_underline " href="#">Corporate Blog</a>
                            
-                            <a class="s_footer s_underline " href="#">Link</a>
+                            <a class="s_footer s_underline " href="#">Legal | Terms o Use</a>
+                            <a class="s_footer s_underline " href="#">Advertising Choices</a>
+                            <a class="s_footer s_underline " href="#">Become a Network Partner</a>
                            
                         
                     </div>
                     <div class="col-2 s_footer s_underline h-100">
-                            <h6>Side  Decorate</h6>
-                               <a class="s_footer " href="#">Link</a>
+                            <h6>Side  Directory</h6>
+                               <a class="s_footer " href="#">Articles</a>
                             
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Find a Business</a>
                               
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">White Pages</a>
                              
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">YP Mobile App</a>
                              
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Gas Guru Mobile App</a>
                             
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Reverse Phone Lookup</a>
+                                <a class="s_footer " href="#">Site Map</a>
+                                <a class="s_footer " href="#">Brows Restaurants</a>
+
+
 
                     </div>
                     <div class="col-2 s_footer s_underline h-100">
                             
-                             <h6>City  Guides</h6>
+                             <h6>City  Guides <span>(more cites)</span></h6>
                             
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Atlanta </a>
                            
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Austin</a>
                               
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Baltimore</a>
                              
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Boston</a>
                              
-                                <a class="s_footer  " href="#">Link</a>
+                                <a class="s_footer  " href="#">Charlotte</a>
                            
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Chicago</a>
+                                <a class="s_footer " href="#">Dallas</a>
+                                <a class="s_footer " href="#">Denver</a>
                              
                           </div>
                         <div class="col-2 pt-4 s_footer s_underline  h-100">
                             
-                                <a class="  s_footer " href="#">Link</a>
+                                <a class="  s_footer " href="#">Detroit</a>
                               
-                                <a class=" s_footer " href="#">Link</a>
+                                <a class=" s_footer " href="#">Houston</a>
                               
-                                <a class="  s_footer " href="#">Link</a>
+                                <a class="  s_footer " href="#">Indianpolis</a>
                               
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#"> City</a>
                                 
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Las Vegas</a>
                               
-                                  <a class=" s_footer " href="#">Link</a>
+                                <a class=" s_footer " href="#">Los Angeles</a>
+                                <a class=" s_footer " href="#">Los Angeles</a>
+                                <a class=" s_footer " href="#">Los Angeles</a>
                         </div>
 
                         <div class="col-2 pt-4 s_footer s_underline h-100">
                             
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Memphis</a>
                               
-                                  <a class="s_footer " href="#">Link</a>
+                                  <a class="s_footer " href="#">Miami</a>
                                 
-                                  <a class="s_footer " href="#">Link</a>
+                                  <a class="s_footer " href="#">Milwaukee</a>
                                 
-                                  <a class="s_footer " href="#">Link</a>
+                                  <a class="s_footer " href="#">New York</a>
                                 
-                                <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Oklahoma City</a>
                               
-                                  <a class="s_footer " href="#">Link</a>
+                                <a class="s_footer " href="#">Orlando</a>
+                                <a class="s_footer " href="#">Philadelphia</a>
+                                <a class="s_footer " href="#">Phoenix</a>
+                                <a class="s_footer " href="#">Saint Louis</a>
                         </div>
                       <div class="col-sm-2 s_footer s_underline h-100">
                            
                             <h6>YP  Family</h6>
-                              <a class="s_footer " href="#">Link</a>
+                              <a class="s_footer " href="#">Corporate</a>
                             
-                                <a class="s_footer " href="#">Link</a>
-                              
-                                <a class="s_footer " href="#">Link</a>
-                              
-                                <a class="s_footer " href="#">Link</a>
-                             
-                               <a class="s_footer " href="#">Link</a>
+                              <a class="s_footer " href="#">Marketing Solution</a>
                             
-                                <a class="s_footer " href="#">Link</a>
+                              <a class="s_footer " href="#">Any Who</a>
                               
                       </div>
                       <div class="text-center pt-4">
@@ -300,6 +447,7 @@
                       </div>
                       <div class="text-center pt-3 s_paragraph">
                         <p> YP, the YP logo and all other YP marks contained herein are trademarks of YP LLC and/or YP affiliated companies. <br>All other marks contained herein are the property of their respective owners.</p>
+                </div>
         </footer>
 
 
