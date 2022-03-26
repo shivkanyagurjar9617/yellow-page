@@ -85,10 +85,15 @@
       border:1px solid red;
       display: inline;
     }
+    .s_input{
+      height:50px;
+    }
     
     .s_input:focus{
       border-bottom:4px solid #ffd400;
       box-shadow:none;
+      
+      
      
       
     }
@@ -126,6 +131,7 @@
      
      position: relative;
      
+     
    }
    .fa-search{
      padding:0px;
@@ -145,9 +151,7 @@
    .s_anker{
      text-decoration: none;
    }
-   .s_height{
-     height:100% !important;
-   }
+   
    .s_color1{
       background-color:#db2e63;
    }
@@ -169,14 +173,47 @@
     }
     .s_circle{
       color:#000;
-      
-      margin:0px 10px 10px 0px;
+     
+      margin:0px 10px 15px 0px;
       
     }
     
     .s_circle >a:hover{
       color:#000;
       border-bottom: 1px solid black;
+      
+    }
+    .fa-solid fa-star{
+      position:relative;
+    }
+    .text_color{
+      color:#fff;
+    }
+    .s_color{
+      color:pink;
+    }
+    .box1{
+      border: 1px solid yellow;
+      height:50px;
+      width:100%;
+      color:#fff;
+      background-color:pink;
+    }
+    .box2{
+      border: 1px solid green;
+      
+      height:50px;
+      width:100%;
+      color:#fff;
+      background-color:pink;
+    }
+    .box3{
+      background-color:rgb(112, 54, 54);
+      height:50px;
+      width:100%;
+    }
+    .s_a:hover{
+      text-decoration: underline;
       
     }
     
@@ -187,8 +224,8 @@
     <body>
          <header>
             <div class="s_header   p-0 " >
-              <div class="container h-100 p-0">
-              <div class="row ">
+              <div class="container  h-100 p-0">
+              <div class="row  ">
                   <div class="col-4 pt-2 ">
                     <img src = "./img/yp.svg">
                     <a href="#" class="s_brows">Browse <i class="fa-solid fa-caret-down "></i></a>
@@ -228,7 +265,7 @@
                           </div>
                           
                         <td class="p-0 border-0 ">
-                          <button type="button" class="btn btn-warning">Find</button>
+                          <button type="button" class=" s_input btn-lg btn-warning">Find</button>
                         </td>
                       </tr>
                     </thead>
@@ -244,11 +281,19 @@
         </header> 
 
         <main>
+          
+            <section>
+         
+          <img src="./img/chicago-il.jpg"class="w-100" >
+          <h1 class="text-position">Chicago,li</h1>
+           
+        </section>
+        
           <div class="container  p-0 pt-3 s_height">
-            <img src="./img/chicago-il.jpg">
-            <div class="row  s_circle ">
+            <h3 class="d-flex justify-content-center">Best Of Chicago</h3>
+            <div class="row pt-2 s_circle ">
              <div class="col-2"></div>
-              <div class="col-1  s_circle ms-3 ">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-1 ">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/restaurants-1.svg"class="w-50" >
@@ -257,7 +302,7 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/auto-repair-1.svg"class="w-50" >
@@ -266,7 +311,7 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/doctors-1.svg"class="w-50" >
@@ -275,16 +320,16 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
-                    <img src="./img/plumbers-1.svg"class="w-50" >
+                    <img src="./img/plumbers-1.svg" class="w-25"  width="100px">
                   </div>
                   <span >Plumber</span>
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/animal-shelters-1.svg"class="w-50" >
@@ -293,7 +338,7 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle ">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/insurance-1.svg"class="w-50" >
@@ -302,7 +347,7 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
+              <div class="col-1 col-xs-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1  s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/attorneys-1.svg"class="w-50" >
@@ -311,7 +356,7 @@
                 </a>
               </div>
               
-              <div class="col-2 col-sx-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1 s_circle ms-3">
+              <div class="col-1 col-xs-1 col-sm-2 col-md-2 col-lg-1 col-xl-1 col-xxl-1 s_circle ms-3">
                 <a href="#" class="text-decoration-none s_circle">
                   <div class=" d-flex justify-content-center rounded-circle s_circle ">
                     <img src="./img/massage-1.svg"class="w-50" >
@@ -321,10 +366,85 @@
               </div>
               <div class="col-2"></div>
             </div>
+            
             <div class="row p-0 ">
+              
               <div class="col-2"></div>
-              <div class="col-sm-3 s_main s_color1 ">A</div>
-              <div class="col-sm-3 s_main s_color2 ">B</div>
+              <div class="col-sm-3 s_main s_color1 ">
+
+
+                <div class=" box text_color">
+                  <i class="fa-solid fa-star"></i>
+                  
+                 
+                  <h5 class="d-inline ">Popular Business</h5>
+                  <div class="ms-4">
+                 <span >in chicago</span>
+                </div>
+                </div>
+               
+                <div class="col-12 s_a ">
+                  <div class="box1 ">
+                  <a href="#" class="text-decoration-none  ">
+                    <h6 class="text_color s_a">River North-Lou Malnati's Pizzeria </h6>
+                    <p class=" text_color s_a">439 N Wells St, Chicago, IL 60654</p>
+                   
+                  </a>
+                </div>
+                </div>
+                
+              
+                <div class="col-12 pt-2 s_a">
+                <div class="box2 ">
+                  <a href="#" class="text-decoration-none  ">
+                    <h6 class="text_color">River North-Lou Malnati's Pizzeria </h6>
+                    <p class=" text_color s_a">439 N Wells St, Chicago, IL 60654</p>
+                  </a>
+                 </div>
+                </div>
+              
+                </div>
+                
+              <div class="col-sm-3 s_main s_color2 ">
+                
+                <div class=" box text_color">
+                  <i class="fa-solid fa-star"></i>
+                  
+                 
+                  <h5 class="d-inline ">Popular Business</h5>
+                  <div class="ms-4">
+                 <span >in chicago</span>
+                </div>
+                </div>
+               
+                <div class="col-12 s_a ">
+                  <div class="box1 ">
+                  <a href="#" class="text-decoration-none  ">
+                    <h6 class="text_color s_a">River North-Lou Malnati's Pizzeria </h6>
+                    <p class=" text_color s_a">439 N Wells St, Chicago, IL 60654</p>
+                   
+                  </a>
+                </div>
+                </div>
+                
+              
+                <div class="col-12 pt-2 s_a">
+                <div class="box2 ">
+                  <a href="#" class="text-decoration-none  ">
+                    <h6 class="text_color">River North-Lou Malnati's Pizzeria </h6>
+                    <p class=" text_color s_a">439 N Wells St, Chicago, IL 60654</p>
+                  </a>
+                 </div>
+                </div>
+                <div class="col-8 offset-2 pt-2">
+                 <div class="box3">
+                  <a href="" class="s_color text-decoration-none s_a">
+                    <h6 class="text_color d-flex justify-content-center text-decoration-none pt-2 s_a">Search for more</h6>
+                  </a>
+                </div>
+                </div>
+
+              </div>
               <div class="col-sm-3 s_main s_color3 ">C</div>
               <div class="col-1"></div>
             </div> 
